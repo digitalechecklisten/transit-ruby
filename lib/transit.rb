@@ -99,10 +99,7 @@ if Transit::jruby?
   require 'jruby'
   com.cognitect.transit.ruby.TransitService.new.basicLoad(JRuby.runtime)
   require 'transit/marshaler/jruby/json'
-  require 'transit/marshaler/jruby/messagepack'
 else
   require 'transit/marshaler/cruby/json'
-  require 'transit/marshaler/cruby/messagepack'
   require 'transit/unmarshaler/cruby/json'
-  require 'transit/unmarshaler/cruby/messagepack'
 end
